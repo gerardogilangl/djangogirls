@@ -1,0 +1,14 @@
+{% block content %}
+    <article class="post">
+    	<aside class="actions">
+		    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+		</aside>
+        <h2>{{ post.title }}</h2>
+        {% if post.published_date %}
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+        {% endif %}
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endblock %}
