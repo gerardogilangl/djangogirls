@@ -10,7 +10,7 @@
 	        <time>published: {{ post.published_date }}</time>
 	    </article>
 	{% endfor %}
-	
+
 	<br><br>
 
 	<div class="pagination">
@@ -33,5 +33,5 @@
 
 	<br><br>
 
-	<button href="{% url 'post_new' %}" class="top-menu">Add</button>
+	<a href="{% url 'post_new' %}" class="top-menu">Add</a>
 </html>
